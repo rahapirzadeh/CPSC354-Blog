@@ -1,6 +1,6 @@
 # Haskell: Recursion in Functional Programming
 
-Haskell is a functional programming language which I had never used before. 
+Haskell is a functional programming language which I had never used before. Functional programming means that the program treats computation as the evaluation of mathematical functions and avoids changing state and mutable data.
 To get started on learning Haskell, I found this [online tutorial](http://tryhaskell.org/). The tutorial taught me the basics of Haskell and what it can do, such as
 
 ```Haskell
@@ -10,6 +10,7 @@ or
 ```Haskell
 let add1 x = x + 1 in add1 5
 ```
+Haskell has very short and clear code. 
 
 ##### To further learning Haskell, I wrote the following functions for the homework assignment...
 ```Haskell
@@ -45,8 +46,8 @@ select_even[] = []
 select_even[x] = []
 select_even(y:x:xs) = x:select_even(xs)
 ```
+The assignment was not too hard. I did have to look into online tutorials and online blogs to get comfotable with the syntax. By not learning Haskell first, I assumed the programs to be longer and not as simple as they were when i was done with them. 
 
-##### The assignment was not too hard. I did have to look into online tutorials and online blogs to get comfotable with the syntax.
 
 I have seen some similarites between Haskell and Python. 
 ```python
@@ -57,5 +58,6 @@ print(a)
 ```Haskell
 sort[44,21,33,2]
 ```
-Both have similar functions, however Haskell is much more condensed. 
+While Haskell is purely functional, Pyton is a mix of procedual, object oriented and functional. 
+Both have similar syntax, however Haskell is much more condensed, leading to shorter lead times.  
 
