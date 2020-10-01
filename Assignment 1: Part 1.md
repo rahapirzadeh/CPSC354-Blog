@@ -9,5 +9,5 @@ The first part included functions in
   * Postive numbers
   * Fractions
   
+To be honest, I did not see the point of Haskell untill I finished the assignment. For each function, you had to simplify it and think critically. It slightly made me a better programmer to think of the algorithms to solve the problems. 
 
-  
