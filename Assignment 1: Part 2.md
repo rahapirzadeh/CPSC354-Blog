@@ -1,6 +1,6 @@
 # Assignment 1: Part 2
 
-For assignment 1 part 2, we had to implement a calculator and we were able to use the Haskell functions.
+For assignment 1 part 2, we had to implement a calculator and we were able to use the built-in Haskell functions. This way is much more efficient since we are using binary numbers instead of suceesor numbers. 
 
 An interpreter for abstract syntax
    * file(s) numbers3.hs 
@@ -41,8 +41,7 @@ BNFC or BNF Converter is the standard format for the specification and documenta
    * Happy - a parser generator for Haskell
 
 
-In a BNFC file, you will find a sequence of rules to help with parsing in a tree. 
-# ---explain parsing in tree---
+In a BNFC file, you will find a sequence of rules to help with parsing in a tree. The parse rules tell the program how to solve the problem and the order. Parsing is all about putting the parenthesis in the right place. The more rules you have, the lower number of trees you can make.
 
 
 As i found out in my research, BNFC is used in other programming languages too. The others I'm familiar with are C++ and java. In particular, in Java, the syntax is a little different. 
@@ -56,8 +55,13 @@ echo "23 + 4 * 70" | java numbers/Test
 ```
 Now, BNFC is a little more complicated in Java than in Haskell, eventhough Haskell has more rough corners. Like in Haskell, you need a parser and lexer, called Cup and JLex. Finally, you need to sett the Java class path. 
 
+Just from looking at one of the files, the main class, you can see several of the similarites. Both languages use their lexer and parser to print the parser tree. The java class looks more simplified and by changes the tree output to a call of the interpreter. In haskell, the string is first lexed and parsed. 
+
+
+
 An interpreter in Java: main class
-```
+
+``` Java
   public class Interpret {
       public static void main(String args[]) throws Exception
       {
@@ -69,21 +73,22 @@ An interpreter in Java: main class
     }
 ```
 An interpreter in Haskell: the main function
-```
+``` Haskell
 module Main where
 
-    import LexCalc
-    import ParCalc
-    import AbsCalc
-    import Interpreter
+import LexNumbers
+import ParNumbers
+import AbsNumbers
+import Interpreter
 
-    import ErrM
+import ErrM
+import PrintNumbers
 
-    main = do
-      interact calc
-      putStrLn ""
+main = do
+  interact calc
+  putStrLn ""
 
-    calc s =
-      let Ok e = pExp (myLexer s)
-      in show (interpret e)
+calc s =
+  let Ok e = pExp (myLexer s)
+  in printTree (eval e)
  ```
