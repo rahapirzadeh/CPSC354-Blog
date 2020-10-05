@@ -56,3 +56,34 @@ echo "23 + 4 * 70" | java numbers/Test
 ```
 Now, BNFC is a little more complicated in Java than in Haskell, eventhough Haskell has more rough corners. Like in Haskell, you need a parser and lexer, called Cup and JLex. Finally, you need to sett the Java class path. 
 
+An interpreter in Java: main class
+```
+  public class Interpret {
+      public static void main(String args[]) throws Exception
+      {
+        Yylex l  = new Yylex(System.in) ;
+        parser p = new parser(l) ;
+        Calc.Absyn.Exp parse_tree = p.pExp() ;
+        System.out.println(Interpreter.interpret(parse_tree)) ;
+      }
+    }
+```
+An interpreter in Haskell: the main function
+```
+module Main where
+
+    import LexCalc
+    import ParCalc
+    import AbsCalc
+    import Interpreter
+
+    import ErrM
+
+    main = do
+      interact calc
+      putStrLn ""
+
+    calc s =
+      let Ok e = pExp (myLexer s)
+      in show (interpret e)
+ ```
