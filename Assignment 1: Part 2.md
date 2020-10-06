@@ -92,3 +92,12 @@ calc s =
   let Ok e = pExp (myLexer s)
   in printTree (eval e)
  ```
+ 
+ 
+ ``` 
+ bnfc -m --haskell numbers.cf
+ make 
+ echo "1+2*3" | ./TestNumbers
+ ghc Calculator.hs
+ echo "1+2*3" | ./Calculator
+```
