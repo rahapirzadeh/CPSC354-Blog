@@ -5,3 +5,8 @@
 [Assignment 1: Part 1](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/Assignment%201:%20Part%201.md)
 
 [Assignment 1: Part 2](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/Assignment%201:%20Part%202.md)
+
+[Parse Trees](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/ParseTrees.md)
+
+[Lambda Calculus](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/LamdaCalc.md)
+
