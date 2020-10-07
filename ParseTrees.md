@@ -17,4 +17,4 @@ Plus. Exp ::= Exp "+" Exp1 ;
 Num. Exp2 ::= Integer ;
 Times. Exp1 ::= Exp1 "*" Exp2 ;
 ```
-The rule is telling us that for multiplication, we take the integer to the right of the sign and to the left. Then we go to to the addition sign and do the same. 
+Precedence is how the tree parses the numbers. Exp has precedence 0, Exp1 has precedence 1 and Exp2 has precedence 2. So for Plus, its saying to form an expression of level 0 from an expression of level 0 on the left of + and of level 1 on the right. The same goes for Times, form an expression of level 1 from an expression of level 1 on the left of * and of level 2 on the right.
