@@ -8,5 +8,5 @@
 
 [Parse Trees](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/ParseTrees.md)
 
-[Lambda Calculus](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/LamdaCalc.md)
+[Lambda Calculus](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/LambdaCalc.md)
 
