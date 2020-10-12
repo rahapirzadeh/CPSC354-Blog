@@ -30,6 +30,7 @@ What this means is that whereever we have a x, we replace with 2 and whereever w
   
 ### When an argument is a variable
   * (λx * λy * x +y)z 3
+  
 We still do the normal substitution, but we eventually have to stop. 
   * (λx * λy * x +y)z 3 = (λy * z +y)3 = z + 3
   
