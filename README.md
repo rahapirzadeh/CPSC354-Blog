@@ -16,6 +16,6 @@
 
 [Turing Incomplete Languages](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/TuringIncomplete.md)
 
-[something]
+[Fortran](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/Fortran.md)
 
 [Final Thoughts](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/FinalThoughts.md)
