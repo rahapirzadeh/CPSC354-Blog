@@ -10,3 +10,12 @@
 
 [Lambda Calculus](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/LambdaCalc.md)
 
+[Dafny](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/Dafny.md)
+
+[Alan Turing](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/Turing.md)
+
+[Turing Incomplete Languages](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/TuringIncomplete.md)
+
+[something]
+
+[Final Thoughts]
