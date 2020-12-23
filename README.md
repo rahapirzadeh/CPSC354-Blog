@@ -18,4 +18,4 @@
 
 [something]
 
-[Final Thoughts]
+[Final Thoughts](https://github.com/rahapirzadeh/CPSC354-Blog/blob/master/FinalThoughts.md)
